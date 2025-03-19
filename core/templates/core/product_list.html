@@ -1,0 +1,7 @@
+<h2>Products</h2>
+<ul>
+    {% for product in products %}
+    <li>{{ product.name }} - ${{ product.price }}</li>
+    {% endfor %}
+</ul>
+<a href="{% url 'add_product' %}">Add New Product</a>

@@ -1,0 +1,7 @@
+<h2>Sales</h2>
+<ul>
+    {% for sale in sales %}
+    <li>{{ sale.customer.first_name }} bought {{ sale.quantity }} x {{ sale.product.name }}</li>
+    {% endfor %}
+</ul>
+<a href="{% url 'add_sale' %}">Add New Sale</a>
